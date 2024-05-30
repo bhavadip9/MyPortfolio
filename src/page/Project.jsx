@@ -1,5 +1,7 @@
 import { FiSun } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { SlMenu } from "react-icons/sl";
+
 
 
 const Project = () => {
@@ -11,9 +13,11 @@ const Project = () => {
                     <Link className="logo_name" to="/"> <h2>Bhavadip Dhandhlya</h2></Link>
                 </div>
                 <div className="r-side">
-                    <Link className="btn_link" to="/blog"> <a className="btn" href="/blog">Blog</a></Link>
+                    <Link className="btn_link" to="/blog"> <a className="btn " href="/blog">Blog</a></Link>
                     <Link className="btn_link" to="/project"> <a className="btn" href="/project">Project</a></Link>
                     <FiSun className="toggle" />
+                    <SlMenu className="side-bar" onClick={() => sidebar()} />
+
                 </div>
 
             </div>
@@ -22,7 +26,7 @@ const Project = () => {
             </div>
 
             <div className='project_start'>
-                <div className='table-1'>
+                <a href="https://github.com/bhavadip9/VoiceTypingApp" className='table-1'>
                     <img src="../img/voicetotext.png" alt="Voicetotext" />
                     <div className='table-footer'>
                         <h2> Voice to text converter</h2>
@@ -33,21 +37,21 @@ const Project = () => {
                             <p>Css</p>
                         </div>
                     </div>
-                </div>
-                <div className='table-1'>
+                </a>
+                <a href="https://github.com/bhavadip9/Books_Store" className='table-1'>
                     <img src="../img/BookStore.png" alt="Protolio" />
                     <div className='table-footer'>
                         <h2> Book Store Website</h2>
                         <p>In this Website you publish your book and Any time Update and Delete your Self .</p>
-
                         <div className="lang">
                             <p>React Js</p>
                             <p>Node Js</p>
                             <p>Tailwin Css</p>
                         </div>
                     </div>
-                </div>
-                <div className='table-1'>
+                </a>
+
+                <a href="https://github.com/bhavadip9/MyProtfilo" className='table-1'>
                     <img src="../img/protfolio.png" alt="Protolio" />
                     <div className='table-footer'>
                         <h2> Protflio Website</h2>
@@ -59,7 +63,7 @@ const Project = () => {
                             <p>Css</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     )

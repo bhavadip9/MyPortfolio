@@ -1,5 +1,5 @@
 //import React from 'react';
-import { FiSun } from "react-icons/fi";
+//import { FiSun } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -8,15 +8,20 @@ import { CgMail } from "react-icons/cg";
 import { FaTwitterSquare } from "react-icons/fa";
 import { SlMenu } from "react-icons/sl";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 
 import '../App.scss';
 
 function Home() {
-    const sidebar = () => {
+    const [isActive, setIsActive] = useState(); // State to track whether the navigation is active
 
-    }
-
-
+    function navHandler() {
+        setIsActive(!isActive); // Toggles the state of isActive
+    };
+    // function handleMoreClick() {
+    //     setShowMore(!showMore);
+    //   }
 
 
 
@@ -27,13 +32,20 @@ function Home() {
                     <Link to="/">  <img className="mylogo" src="../img/Bhavadip.JPG" alt="" /></Link>
                     <Link className="logo_name" to="/"> <h2>Bhavadip Dhandhlya</h2></Link>
                 </div>
-                <div className="r-side">
+                <div className="r-side"  >
+                    <SlMenu className="side-bar" onClick={navHandler} />
 
-                    <Link className="btn_link" to="/blog"> <a className="btn" href="/blog">Blog</a></Link>
-                    <Link className="btn_link" to="/project"> <a className="btn" href="/project">Project</a></Link>
-                    {/* <FiSun className="toggle" /> */}
-                    <SlMenu className="side-bar" onClick={() => sidebar()} />
+                    {isActive ?? (
+                        <div className="no_space" >
+                            <Link className="btn_link" to="/blog"> <a className="btn" href="/blog">Blog</a></Link>
+                            <Link className="btn_link" to="/project"> <a className="btn btn_link" href="/project">Project</a></Link>
+                        </div>
+                    )}
+
                 </div>
+
+                {/* <FiSun className="toggle" />//className="r-side" */}
+                {/* <SlMenu className="side-bar" onClick={toggleMenu} /> */}
             </div>
             <div className='animation'>
                 <div className="container1">
