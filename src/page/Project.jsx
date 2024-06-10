@@ -1,70 +1,36 @@
-import { FiSun } from "react-icons/fi";
-import { Link } from "react-router-dom";
-import { SlMenu } from "react-icons/sl";
+import { Row } from "react-bootstrap";
+import projects from "../data";
+import ResponsiveCard from "./ResponsiveCard";
+import Navbar from "../componet/Navbar";
+import Footer from "../componet/Footer";
 
 
 
 const Project = () => {
+
     return (
-        <div className='body1'>
-            <div className="navbar">
-                <div className="logo">
-                    <Link to="/">  <img className="mylogo" src="../img/Bhavadip.JPG" alt="" /></Link>
-                    <Link className="logo_name" to="/"> <h2>Bhavadip Dhandhlya</h2></Link>
+        <div>
+
+
+            <div className='body1'>
+                <Navbar></Navbar>
+                <div>
+                    <h1 className='name1'>Projects</h1>
                 </div>
-                <div className="r-side">
-                    <Link className="btn_link" to="/blog"> <a className="btn " href="/blog">Blog</a></Link>
-                    <Link className="btn_link" to="/project"> <a className="btn" href="/project">Project</a></Link>
-                    <FiSun className="toggle" />
-                    <SlMenu className="side-bar" onClick={() => sidebar()} />
-
-                </div>
-
-            </div>
-            <div>
-                <h1 className='name1'>Projects</h1>
-            </div>
-
-            <div className='project_start'>
-                <a href="https://github.com/bhavadip9/VoiceTypingApp" className='table-1'>
-                    <img src="../img/voicetotext.png" alt="Voicetotext" />
-                    <div className='table-footer'>
-                        <h2> Voice to text converter</h2>
-                        <p>This is my project for voice to text converter</p>
-
-                        <div className="lang">
-                            <p>React Js</p>
-                            <p>Css</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/bhavadip9/Books_Store" className='table-1'>
-                    <img src="../img/BookStore.png" alt="Protolio" />
-                    <div className='table-footer'>
-                        <h2> Book Store Website</h2>
-                        <p>In this Website you publish your book and Any time Update and Delete your Self .</p>
-                        <div className="lang">
-                            <p>React Js</p>
-                            <p>Node Js</p>
-                            <p>Tailwin Css</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/bhavadip9/MyProtfilo" className='table-1'>
-                    <img src="../img/protfolio.png" alt="Protolio" />
-                    <div className='table-footer'>
-                        <h2> Protflio Website</h2>
-                        <p>This my protflio website where I store all my project and my knowledge. </p>
-
-                        <div className="lang">
-                            <p>React Js</p>
-                            <p>Node Js</p>
-                            <p>Css</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                <Row className="cardflex">
+                    {projects.map(project => (
+                        <ResponsiveCard
+                            key={project.id}
+                            title={project.title}
+                            description={project.description}
+                            imageUrl={project.imageUrl}
+                            link={project.link}
+                            technologies={project.technologies}
+                        />
+                    ))}
+                </Row>
+                <Footer></Footer>
+            </div >
         </div>
     )
 }
