@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from '../componet/Navbar'
 import { Row } from 'react-bootstrap'
 import ResponsiveBlogCard from './ResponsiveBlogCard'

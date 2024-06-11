@@ -11,7 +11,8 @@ function Home() {
         // Trigger the download of the PDF file
         const link = document.createElement('a');
         // link.href = `${process.env.PUBLIC_URL}/Bhavadip.pdf`; // URL to the PDF file in the public folder
-        link.href = `public/Bhavadip.pdf`; // URL to the PDF file in the public folder
+        // link.href = `public/Bhavadip.pdf`; // URL to the PDF file in the public folder
+        link.href = `https://drive.google.com/file/d/1J-CFDk-nCeDnW0YS6X9Ggc0CyCo_wLiu/view?usp=drivesdk`; // URL to the PDF file in the public folder
         link.download = 'Bhavadip.pdf'; // The name of the file to be downloaded
         link.click();
     }
@@ -81,8 +82,8 @@ function Home() {
                         <div className="timeline">
                             <div className="container left">
                                 <div className="content">
-                                    <h3>B.tech</h3>
-                                    <p>GEC gandhinagar</p>
+                                    <h3>B.Tech</h3>
+                                    <p>GEC Gandhinagar</p>
                                     <p>Continue btech in CE </p>
                                     <span>Complete in :-2025</span>
                                 </div>
@@ -91,7 +92,7 @@ function Home() {
                                 <div className="content">
                                     <h3>HSC</h3>
                                     <p>MK Techno School Talaja</p>
-                                    <p>10+2 with pysics math and chemistry, got 1677 rank in Gujrat board.</p>
+                                    <p>10+2 with physics maths and chemistry, got 1677 rank in Gujarat board.</p>
                                     <span>2021</span>
                                 </div>
                             </div>
