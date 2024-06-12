@@ -162,7 +162,9 @@
 .about{
  display: flex;
  flex-direction: column;
- margin: 0 25%;
+ //margin: 0 25%;
+ max-width: 900px;
+ justify-content: center;
  
 }
 .about h1{
@@ -202,6 +204,13 @@
   font-size: large;
   color: #1471e1;
 }
+.skillclass{
+  display: flex;
+ flex-direction: column;
+  max-width: 1000px;
+  justify-content: center;
+  margin-left: 19rem;
+}
 
 .academy{
   background-color: #829bbb; 
@@ -217,7 +226,7 @@
 .timeline {
   padding-top: 70px;
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   
 }
@@ -413,7 +422,7 @@
     text-align: center;
   
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     .cardflex{
       display: grid;
       grid-template-columns: auto;
@@ -451,7 +460,7 @@
        border-radius: 10px 10px 10px 10px;
      }
   }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 535px) {
     .body1{
       width: 100vh;
     }
@@ -465,6 +474,7 @@
       margin: 5px 50px ;
      
     }
+
     .table-img {
      max-width: 450px;
     }
@@ -474,7 +484,17 @@
       max-width: 45rem;
       margin-bottom: 4rem;
       border-radius: 10px 10px 10px 10px;
+    }.avatar{
+      height: 100px;
+      width: 100px;
+      margin-top: 5rem;
     }
+    .logo {
+      gap: 0px;
+      align-items: center;
+      padding-right: 0;
+      display: flex;
+  }
   }
 
   @media only screen and (max-width: 700px) {
@@ -485,7 +505,7 @@
       padding: 0;
     }
     .logo{
-      gap: 18px;
+      gap: 0px;
       align-items: center;
       padding-right: 0; 
       display: flex; 

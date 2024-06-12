@@ -8,14 +8,14 @@ import Footer from "../componet/Footer";
 function Home() {
 
     function handleDownload() {
-        // Trigger the download of the PDF file
+
         const link = document.createElement('a');
         // link.href = `${process.env.PUBLIC_URL}/Bhavadip.pdf`; // URL to the PDF file in the public folder
         //link.href = `public/Bhavadip.pdf`; // URL to the PDF file in the public folder
         //link.href = `../public/img/Bhavadip.pdf`;
-        link.href = `https://github.com/bhavadip9/MyPortfolio/blob/master/public/Bhavadip.pdf`; // URL to the PDF file in the public folder
+        link.href = `https://github.com/bhavadip9/MyPortfolio/blob/master/public/Bhavadip.pdf`;
         // link.href = `https://drive.google.com/file/d/1J-CFDk-nCeDnW0YS6X9Ggc0CyCo_wLiu/view?usp=drivesdk`;
-        // URL to the PDF file in the public folder
+
         link.download = 'Bhavadip.pdf'; // The name of the file to be downloaded
         link.click();
     }
@@ -26,9 +26,9 @@ function Home() {
 
     return (
         <div>
-            <Navbar></Navbar>
-            <div style={{ backgroundColor: "#829bbb" }}>
 
+            <div style={{ backgroundColor: "#829bbb" }}>
+                <Navbar></Navbar>
 
                 <div className='animation'>
                     <div className="container1">
@@ -44,7 +44,7 @@ function Home() {
                     </div>
                     <div className="about">
                         <h1>About</h1>
-                        <p>I'm a Software Engineer based in Gujrat, India. I have a passion for building performant, scalable and beautiful user interfaces. I have proficiency in technologies like React.js, Node.js. I have B.Tech degree in Computer Engineering from GEC gandhinagar .</p>
+                        <p>I'm a Software Engineer based in Gujarat, India. I have a passion for building performant, scalable and beautiful user interfaces. I have proficiency in technologies like React.js, Node.js. I have B.Tech degree in Computer Engineering from GEC gandhinagar .</p>
                         {/* <Button className="">Resume</Button> */}
 
 
@@ -61,25 +61,27 @@ function Home() {
 
 
                 </div>
+                <div>
+                    <div className="about skillclass" >
+                        <h1>Skill</h1>
+                        <div className="lang skills">
+                            <p className='technologies skillstyle'>HTML</p>
+                            <p className='technologies skillstyle'>CSS</p>
+                            <p className='technologies skillstyle'>JAVASCRIPT</p>
+                            <p className='technologies skillstyle'>REACT JS</p>
+                            <p className='technologies skillstyle'>NODE Js</p>
+                            <p className='technologies skillstyle'>MONGOOSE</p>
+                            <p className='technologies skillstyle'>JAVA</p>
 
-                <div className="about" >
-                    <h1>Skill</h1>
-                    <div className="lang skills">
-                        <p className='technologies skillstyle'>HTML</p>
-                        <p className='technologies skillstyle'>CSS</p>
-                        <p className='technologies skillstyle'>JAVASCRIPT</p>
-                        <p className='technologies skillstyle'>REACT JS</p>
-                        <p className='technologies skillstyle'>NODE Js</p>
-                        <p className='technologies skillstyle'>MONGOOSE</p>
-                        <p className='technologies skillstyle'>JAVA</p>
-
+                        </div>
                     </div>
                 </div>
 
 
+
                 <div className="academy">
-                    <div className="about" >
-                        <h1>Education</h1>
+                    <div >
+                        <h1 className=" about skillclass">Education</h1>
                     </div>
                     <div className="acsdemygraph">
                         <div className="timeline">
