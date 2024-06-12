@@ -69,7 +69,7 @@ function Home() {
                             <p className='technologies skillstyle'>CSS</p>
                             <p className='technologies skillstyle'>JAVASCRIPT</p>
                             <p className='technologies skillstyle'>REACT JS</p>
-                            <p className='technologies skillstyle'>NODE Js</p>
+                            <p className='technologies skillstyle'>NODE JS</p>
                             <p className='technologies skillstyle'>MONGOOSE</p>
                             <p className='technologies skillstyle'>JAVA</p>
 
@@ -81,7 +81,7 @@ function Home() {
 
                 <div className="academy">
                     <div >
-                        <h1 className=" about skillclass">Education</h1>
+                        <h1 className=" about skillclass skillclass1">Education</h1>
                     </div>
                     <div className="acsdemygraph">
                         <div className="timeline">

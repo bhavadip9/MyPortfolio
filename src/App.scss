@@ -211,6 +211,9 @@
   justify-content: center;
   margin-left: 19rem;
 }
+.skillclass1{
+  text-decoration-line: underline;
+}
 
 .academy{
   background-color: #829bbb; 
@@ -345,9 +348,10 @@
 
 .body1{
   background-color: #829bbb;
-  background-size: cover;
+  //background-size: cover;
   margin: 0;
   padding: 0;
+ 
 }
 
 .name1{
@@ -431,15 +435,15 @@
     }
     .body1{
       
-     
-      margin: 0;
-  padding: 0;
+    
+     margin: 0;
+     padding: 0;
     }
     .acsdemygraph{
       justify-content: center;
       align-items: center;
-      width: 80%;
-      margin-left: 1rem;
+     // width: 80%;
+     // margin-left: 10rem;
     }
     .skills{
       display: grid;
@@ -459,11 +463,19 @@
        margin-bottom: 4rem;
        border-radius: 10px 10px 10px 10px;
      }
+     .acsdemygraph{
+      margin-left: 5px;
+      width: 100%;
+     }
+    //  .projectpage{
+    //   height: 100vh;
+    //  }
   }
   @media only screen and (max-width: 535px) {
-    .body1{
-      width: 100vh;
-    }
+    
+    // .body1{
+    //   height: 100vh;
+    // }
     .skills{
       display: grid;
       grid-template-columns: auto auto;  
@@ -495,12 +507,13 @@
       padding-right: 0;
       display: flex;
   }
+ 
   }
 
   @media only screen and (max-width: 700px) {
     .body1{
      
-      
+      width: 100vh;
       margin: 0;
       padding: 0;
     }
@@ -571,6 +584,12 @@
     .timeline::after {
       left: 31px;
     }
+    .timeline {
+      padding-top: 40px;   
+    }
+    .acsdemygraph{
+      margin-top: 50px;
+    }
   
     /* Full-width containers */
     .container {
@@ -613,7 +632,7 @@
     .cardflex{
       display: grid;
       grid-template-columns: auto;
-      margin: 50px;
+     // margin: 50px;
      
     }
    
