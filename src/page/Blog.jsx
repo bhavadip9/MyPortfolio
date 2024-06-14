@@ -8,7 +8,7 @@ import Footer from '../componet/Footer'
 const Blog = () => {
     return (
         <div >
-            <div className='body1'>
+            <div className='blogbody'>
                 <Navbar></Navbar>
                 <div>
                     <h1 className='name1'>Blogs</h1>

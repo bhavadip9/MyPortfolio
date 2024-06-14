@@ -353,6 +353,11 @@
   padding: 0;
  
 }
+.blogbody{
+  background-color: #829bbb;
+  margin: 0;
+  padding: 0;
+}
 
 .name1{
     display: flex;
@@ -476,6 +481,9 @@
     // .body1{
     //   height: 100vh;
     // }
+    // .blogbody{
+    //   height: 100vh;
+    // }
     .skills{
       display: grid;
       grid-template-columns: auto auto;  
@@ -511,9 +519,15 @@
   }
 
   @media only screen and (max-width: 700px) {
+    .blogbody{
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
     .body1{
-     
-      width: 100vh;
+     width: 100vh;
+      // height:  100vh;
       margin: 0;
       padding: 0;
     }
