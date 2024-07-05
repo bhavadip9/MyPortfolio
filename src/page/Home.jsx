@@ -10,11 +10,9 @@ function Home() {
     function handleDownload() {
 
         const link = document.createElement('a');
-        // link.href = `${process.env.PUBLIC_URL}/Bhavadip.pdf`; // URL to the PDF file in the public folder
-        //link.href = `public/Bhavadip.pdf`; // URL to the PDF file in the public folder
-        //link.href = `../public/img/Bhavadip.pdf`;
-        link.href = `https://github.com/bhavadip9/MyPortfolio/blob/master/public/Bhavadip.pdf`;
-        // link.href = `https://drive.google.com/file/d/1J-CFDk-nCeDnW0YS6X9Ggc0CyCo_wLiu/view?usp=drivesdk`;
+
+        link.href = `https://drive.google.com/file/d/1SeIjrWZO8lb1K0QZoTJnH5ozGMn6EIH5/view`;
+
 
         link.download = 'Bhavadip.pdf'; // The name of the file to be downloaded
         link.click();
