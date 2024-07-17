@@ -11,7 +11,7 @@ function Home() {
 
         const link = document.createElement('a');
 
-        link.href = `https://drive.google.com/file/d/1SeIjrWZO8lb1K0QZoTJnH5ozGMn6EIH5/view`;
+        link.href = `https://drive.google.com/file/d/1SCQadFzyWLltXHLEYupAEjLibgkegMFK/view?usp=sharing`;
 
 
         link.download = 'Bhavadip.pdf'; // The name of the file to be downloaded
