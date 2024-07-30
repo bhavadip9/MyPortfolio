@@ -12,7 +12,7 @@ const projects = [
         title: "Voice to text converter",
         description: "Build web applications using React js.",
         imageUrl: "/img/voicetotext.jpg",
-        link: "https://github.com/bhavadip9/VoiceTypingApp",
+        link: "https://voice-to-textconverter.netlify.app/",
         technologies: ["React.Js", "CSS"]
     },
     {
@@ -28,7 +28,7 @@ const projects = [
         title: "Signature App",
         description: "Build React web application using react-signature-canvas module.",
         imageUrl: "/img/Sign.jpg",
-        link: "https://github.com/bhavadip9/Signature_App",
+        link: "https://singnature-draw.netlify.app/",
         technologies: ["React.Js", "react-signature-canvas module"]
     },
     {
@@ -36,7 +36,7 @@ const projects = [
         title: "Portfolit",
         description: "This my protflio website where I store all my project and my knowledge.",
         imageUrl: "/img/protfolio.jpg",
-        link: "https://github.com/bhavadip9/MyPortfolio",
+        link: "https://bmd-portfolio-pink.vercel.app/",
         technologies: ["React.Js", "React-bootstrap"]
     }
     // Add more projects as needed
