@@ -18,6 +18,14 @@ function Home() {
         link.click();
     }
 
+    function handleMywork() {
+        const link = document.createElement('a');
+
+        link.href = `https://www.instagram.com/bhavadip_dev/`;
+        link.target = `_blank`
+        link.click();
+    }
+
 
 
 
@@ -49,6 +57,9 @@ function Home() {
                         <div>
                             <button className="btn project1">
                                 <div className="goto_project" onClick={handleDownload}> Resume</div>
+                            </button>
+                            <button className="btn project1">
+                                <div className="goto_project" onClick={handleMywork}> My Work</div>
                             </button>
 
                             <button className="btn project1">
