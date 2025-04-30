@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
             <div className="footer">
                 <div className="socialmedia" >
-                    <Link href="https://www.linkedin.com/in/bhavadip-dhandhlya-3a0739229/"> <FaLinkedin className="socialmedia_logo" /></Link>
+                    <link href="https://www.linkedin.com/in/bhavadip-dhandhlya-3a0739229/"> <FaLinkedin className="socialmedia_logo" /></link>
                 </div>
                 <div className="socialmedia">
                     <Link href="https://github.com/bhavadip9"><FaGithubSquare className="socialmedia_logo" /></Link>
